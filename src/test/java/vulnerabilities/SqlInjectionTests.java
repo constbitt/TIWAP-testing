@@ -6,7 +6,7 @@ import org.junit.jupiter.api.TestInfo;
 public class SqlInjectionTests extends TestBase {
 
     @Override
-    protected String getLoginPath() {
+    protected String getEndpoint() {
         return "/sql-injection";
     }
 

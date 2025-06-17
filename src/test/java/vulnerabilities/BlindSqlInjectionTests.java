@@ -6,7 +6,7 @@ import org.junit.jupiter.api.TestInfo;
 public class BlindSqlInjectionTests extends TestBase {
 
     @Override
-    protected String getLoginPath() {
+    protected String getEndpoint() {
         return "/blind-sql-injection";
     }
 
