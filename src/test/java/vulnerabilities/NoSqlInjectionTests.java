@@ -49,4 +49,9 @@ public class NoSqlInjectionTests extends TestBase {
     void testPasswordNeAdmin(TestInfo testInfo) {
         testLogin(testInfo, "admin", "{\"$ne\": \"admin\"}");
     }
+
+    @Test
+    void testAny(TestInfo testInfo) {
+        testLogin(testInfo, "{\"$regex\": \".*\"}", "{\"$regex\": \".*\"}");
+    }
 }
